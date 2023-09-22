@@ -1,4 +1,4 @@
 celery
 flower
-redis==4.3.6
-kombu==3.0.21
+redis
+kombu
