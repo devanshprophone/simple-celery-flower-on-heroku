@@ -11,6 +11,6 @@ steps:
       gcloud secrets versions access latest --secret=cloud-build-ssh-key-pub > ~/root/.ssh/id_rsa.pub && \\
       chmod 600 ~/root/.ssh/id_rsa.pub && \\
       set -x && \\
-      gcloud compute ssh server_name --ssh-key-file=~/root/.ssh/id_rsa --zone=europe-west2-c
+      gcloud compute ssh instance-20240709-124713 --ssh-key-file=~/root/.ssh/id_rsa --command="pwd"
 options:
   logging: CLOUD_LOGGING_ONLY
